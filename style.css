@@ -1,47 +1,52 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     padding: 0;
     margin: 0;
 }
+
+
 /*task bar
   start
 */
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #333;
     color: aliceblue;
 }
-.brand-name{
+
+.brand-name {
     font-size: 1.5rem;
     margin: 0.5rem;
 }
 
-.navbar-links ul{
+.navbar-links ul {
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.navbar-links li{
+.navbar-links li {
     list-style: none;
 }
 
-.navbar-links li a{
+.navbar-links li a {
     text-decoration: none;
     color: aliceblue;
     padding: 1rem;
     display: block;
 }
 
-.navbar-links li:hover{
+.navbar-links li:hover {
     background-color: #555;
 }
-.toggle-button{
+
+.toggle-button {
     position: absolute;
     top: .75rem;
     right: 1rem;
@@ -51,52 +56,47 @@ body{
     width: 30px;
     height: 21px;
 }
-.toggle-button .bar{
+
+.toggle-button .bar {
     height: 3px;
     width: 100%;
     background-color: wheat;
     border-radius: 10px;
 }
 
-@media(max-width:600px){
-    .toggle-button{
+@media(max-width:600px) {
+    .toggle-button {
         display: flex;
     }
-
-    .navbar-links{
+    .navbar-links {
         display: none;
         width: 100%;
     }
-
-    .navbar{
+    .navbar {
         flex-direction: column;
         align-items: flex-start;
     }
-
-    .navbar-links ul{
+    .navbar-links ul {
         flex-direction: column;
         width: 100%;
     }
-
-
-    .navbar-links li{
+    .navbar-links li {
         text-align: center;
     }
-
-    .navbar-links li a{
+    .navbar-links li a {
         padding: .5rem 1rem;
     }
-    .navbar-links.active{
+    .navbar-links.active {
         display: flex;
     }
 }
+
 
 /*task bar
   ends
 */
 
-
-.bg-image_or_firstdiv{
+.bg-image_or_firstdiv {
     width: 100%;
     height: 750px;
     background-image: url(https://wovenmagazine.com/content/uploads/2019/09/01-CodyCobb_banner.jpg);
@@ -104,67 +104,76 @@ body{
     color: aliceblue;
 }
 
-.text_of_the_image{
+.text_of_the_image {
     display: flex;
     height: 300px;
     font-size: 50px;
     padding-left: 20px;
     align-items: end;
-    
 }
 
-.welcome{
+.welcome {
     padding-left: 27px;
 }
-.explore{
+
+.explore {
     margin-left: 30px;
     width: 100px;
     height: 40px;
-   font-size: 24px;
-   background: transparent;
-   color: antiquewhite;
-   border:  2px solid antiquewhite;
+    font-size: 24px;
+    background: transparent;
+    color: antiquewhite;
+    border: 2px solid antiquewhite;
 }
-.explore:hover{
+
+.explore:hover {
     background-color: white;
     color: black;
     transition: 0.5s
 }
-.continents{
- width: 100%;
- height: 1350px;
- background-color: aqua;
- border: 5px solid black;
+
+.continents {
+    width: 100%;
+    height: 1350px;
+    background-color: aqua;
+    border: 5px solid black;
 }
+
+
 /* video */
-.videos{
+
+.videos {
     margin-left: 30px;
     display: flex;
     width: 100%;
     justify-content: center;
 }
-.textforvideo{
+
+.textforvideo {
     background-color: cyan;
     border: 5px solid black;
     margin-top: 20px;
     padding-bottom: 20px;
 }
 
-.textforvideo h1{
+.textforvideo h1 {
     display: flex;
     width: 100%;
     height: 42px;
     justify-content: center;
 }
-.textforvideo p{
+
+.textforvideo p {
     display: flex;
     width: 100%;
     height: 42px;
     justify-content: center;
 }
- 
+
+
 /*first look*/
-.discover{
+
+.discover {
     display: flex;
     margin-left: 20px;
     margin-top: 40px;
@@ -173,182 +182,214 @@ body{
     justify-content: center;
     font-size: 45px;
 }
-.about-continents{
+
+.about-continents {
     display: grid;
     margin-left: 1spx;
     grid-template-columns: repeat(4, 2fr);
 }
-.Asia{
+
+.Asia {
     text-align: justify;
     width: 80%;
     margin: 20px;
     height: 400px;
 }
-.Asia img{
-    width: 100%;
-    height: 394px;
-    border-radius: 9px;
-}
-.europe{
-    text-align: justify;
-    width: 80%;
-    margin: 20px;
-}
-.europe img{
-    width: 100%;
-    height: 394px;
-    border-radius: 9px;
-}
-.africa{
-    text-align: justify;
-    width: 80%;
-    margin: 20px;
-}
-.africa img{
+
+.Asia img {
     width: 100%;
     height: 394px;
     border-radius: 9px;
 }
 
-.America{
+.europe {
     text-align: justify;
     width: 80%;
     margin: 20px;
 }
-.America img{
+
+.europe img {
     width: 100%;
     height: 394px;
     border-radius: 9px;
 }
-.Australia{
+
+.africa {
     text-align: justify;
     width: 80%;
     margin: 20px;
 }
-.Australia img{
+
+.africa img {
     width: 100%;
     height: 394px;
     border-radius: 9px;
 }
-.Antartica{
+
+.America {
     text-align: justify;
     width: 80%;
     margin: 20px;
 }
-.Antartica img{
+
+.America img {
     width: 100%;
     height: 394px;
     border-radius: 9px;
 }
-.about-me{
+
+.Australia {
+    text-align: justify;
+    width: 80%;
+    margin: 20px;
+}
+
+.Australia img {
+    width: 100%;
+    height: 394px;
+    border-radius: 9px;
+}
+
+.Antartica {
+    text-align: justify;
+    width: 80%;
+    margin: 20px;
+}
+
+.Antartica img {
+    width: 100%;
+    height: 394px;
+    border-radius: 9px;
+}
+
+.about-me {
     width: 98%;
     height: 400px;
 }
-.bg2-image_or_firstdiv{
+
+.bg2-image_or_firstdiv {
     width: 100%;
     height: 750px;
     background-image: url(https://img.theculturetrip.com/x/smart/wp-content/uploads/2019/04/shutterstock_3821989031.jpg);
     background-size: cover;
     color: aliceblue;
 }
+
+
 /* asia starts here */
-.explore-asia{
+
+.explore-asia {
     background-image: url(Screenshot\ \(131\).png);
     height: 1152px;
     color: black;
 }
-.explore-asia-text{
+
+.explore-asia-text {
     height: 50px;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     font-size: 1.3rem;
-    color: white;
+    color: black;
 }
 
-
-.my-asia{
+.my-asia {
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 4rem;
 }
-.about-asia{
+
+.about-asia {
     display: grid;
-    grid-template-columns: repeat(3,2fr);
+    grid-template-columns: repeat(3, 2fr);
 }
-.wrap-location{
+
+.wrap-location {
     background-color: aliceblue;
     width: 95%;
     border-radius: 9px;
     margin-left: 20px;
 }
 
-.asia-location img{
+.asia-location img {
     width: 90%;
     padding-left: 33px;
     padding-top: 15px
 }
-.asia-location p{
+
+.asia-location p {
     width: 98%;
+    font-size: 0.9rem;
     padding-left: 33px;
 }
-.asia-location h1{
+
+.asia-location h1 {
     width: 90%;
     padding-left: 33px;
     text-align: center;
 }
-.asia-location li{
+
+.asia-location li {
     width: 90%;
     padding-left: 33px;
 }
+
+
 /* asia ends here */
-.explore-europe{
+
+.explore-europe {
     background-image: url(https://www.freeworldmaps.net/europe/europe-physical-map.jpg);
     height: 1152px;
     color: black;
 }
 
-.explore-africa{
+.explore-africa {
     background-image: url(https://www.freeworldmaps.net/africa/africa-physical-map.jpg);
     height: 1152px;
     color: black;
 }
-.explore-north-america{
+
+.explore-north-america {
     background-image: url(https://i.pinimg.com/736x/8f/04/dc/8f04dce3c59bcc552336fa1ee5185146.jpg );
     height: 1152px;
     color: black;
 }
-.explore-south-america{
+
+.explore-south-america {
     background-image: url(https://www.ezilon.com/maps/images/SouthAmerica_phy1.gif);
     height: 1152px;
     color: black;
 }
-.explore-australia{
+
+.explore-australia {
     background-image: url(https://www.freeworldmaps.net/australia/australia-physical-map.jpg);
     height: 1152px;
     color: black;
 }
-.explore-antartica{
+
+.explore-antartica {
     background-image: url(https://i.pinimg.com/originals/d1/2c/23/d12c230cdb4a6667be34da35aa0e7cf7.png);
     height: 1152px;
     color: black;
 }
 
-.about-antarctica{
+.about-antarctica {
     display: grid;
-    grid-template-columns: repeat(2,2fr);
+    grid-template-columns: repeat(2, 2fr);
 }
+
 
 /* form */
 
-.form{
+.form {
     border: 4px solid black;
     background-image: url(https://media.istockphoto.com/vectors/abstract-blurred-colorful-background-vector-id1248542684?k=20&m=1248542684&s=612x612&w=0&h=1yKiRrtPhiqUJXS_yJDwMGVHVkYRk2pJX4PG3TT4ZYM=);
 }
-.form h1{
+
+.form h1 {
     display: flex;
     justify-content: center;
     font-size: 4rem;
@@ -356,12 +397,14 @@ body{
     margin-left: 20%;
     margin-right: 20%;
 }
-.form p{
+
+.form p {
     display: flex;
     font-size: 1.5rem;
     justify-content: center;
 }
-.form-content{
+
+.form-content {
     display: flex;
     align-items: center;
     justify-content: center;
